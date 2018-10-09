@@ -9,6 +9,8 @@ import("//third_party/widevine/cdm/widevine.gni")
 static_library("chrome") {
   visibility = [ "//electron:electron_lib" ]
   sources = [
+    "//chrome/browser/browser_process.cc",
+    "//chrome/browser/browser_process.h",
     "//chrome/browser/icon_loader.cc",
     "//chrome/browser/icon_loader.h",
     "//chrome/browser/icon_loader_mac.mm",
