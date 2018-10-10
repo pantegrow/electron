@@ -1035,6 +1035,11 @@ workflows:
     jobs:
       - linux-checkout
 
+      # FIXME
+      - linux-x64-unittests:
+          requires:
+            - linux-checkout
+
       - linux-x64-debug:
           requires:
             - linux-checkout
